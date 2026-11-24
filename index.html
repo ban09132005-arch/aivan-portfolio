@@ -1,29 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Aivan Baltazar — Personal Portfolio</title>
-<meta name="description" content="Personal portfolio of Aivan E. Baltazar, BSIT student and aspiring junior developer." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aivan E. Baltazar — Information Technology student and aspiring junior developer.">
+  <meta name="theme-color" content="#0c0c11">
+  <title>Aivan Baltazar — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
 <header class="nav">
-  <nav class="container nav-inner" aria-label="Main">
-    <a href="#home" class="logo" aria-label="AB Portfolio, back to top">AB<span>Portfolio.</span></a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+  <nav class="container nav-inner" aria-label="Main navigation">
+    <a href="#home" class="logo" aria-label="AB Portfolio home">AB<span>Portfolio.</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#documents">Documents</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -31,17 +33,26 @@
 
 <main>
   <section id="home" class="hero">
-    <div class="container">
-      <p class="eyebrow">Welcome to my personal portfolio</p>
-      <h1>Hi, I&apos;m <span>Aivan Baltazar.</span></h1>
-      <p class="lead">A student with a passion for learning and technology.</p>
-      <p class="sub">and also an aspiring junior developer in the future.</p>
-      <div class="btn-row">
-        <a href="#about" class="btn btn-primary">About me</a>
-        <a href="https://github.com/ban09132005-arch" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-          View GitHub
-        </a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to my personal portfolio</p>
+        <h1>Hi, I'm <span>Aivan Baltazar.</span></h1>
+        <p class="role">Aspiring Junior Developer</p>
+        <p class="lead">An Information Technology student interested in building functional web applications, organizing data, and creating user-friendly interfaces.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+          <a href="assets/Aivan-Baltazar-Resume.pdf" class="btn btn-ghost" download>Download resume <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/ban09132005-arch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/aivan-baltazar-377396447/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:baltazar.aivanescomen@fiilamer.edu.ph">Email ↗</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-orbit"></div>
+        <img class="hero-photo" src="assets/aivan-photo-source.png" alt="Formal portrait of Aivan E. Baltazar">
+        <div class="photo-caption"><span class="status-dot"></span> IT Student · Aspiring Developer</div>
       </div>
     </div>
   </section>
@@ -50,53 +61,106 @@
     <div class="container">
       <p class="eyebrow reveal">Get to know me</p>
       <h2 class="title reveal">About <span>Me</span></h2>
-      <div class="about-grid reveal">
-        <div class="photo">
-          <img src="./img/aivan-photo-source.png" alt="Formal portrait of Aivan E. Baltazar wearing a navy suit and white shirt" />
-        </div>
+      <div class="about-panel reveal">
         <div class="about-text">
           <h3>A little about myself</h3>
-          <p>Hello! I&apos;m Aivan E. Baltazar, a Bachelor of Science in Information Technology student from BSIT - 3 A.</p>
-          <p>I&apos;m continuously learning, exploring new technologies, and developing my skills through my experiences as an IT student. This portfolio is a collection of skills and experiences I&apos;ve gathered throughout my journey as a student.</p>
+          <p>Hello! I'm Aivan E. Baltazar, a Bachelor of Science in Information Technology student at Filamer Christian University.</p>
+          <p>I'm continuously learning, exploring new technologies, and developing my skills through academic activities and hands-on projects. This portfolio presents the work, tools, and achievements I've gathered throughout my journey as an IT student.</p>
           <div class="chips">
-            <span class="chip">BSIT - 3 A</span>
+            <span class="chip">BSIT</span>
+            <span class="chip">Filamer Christian University</span>
             <span class="chip">Dao, Capiz, Philippines</span>
           </div>
         </div>
+        <aside class="about-note">
+          <span class="note-label">Career direction</span>
+          <strong>Aspiring Junior Developer</strong>
+          <p>Interested in web application development, databases, and practical software solutions.</p>
+        </aside>
       </div>
     </div>
   </section>
 
   <section id="skills">
     <div class="container">
-      <p class="eyebrow reveal">Skills and tools</p>
-      <h2 class="title reveal" lang="zh">雷神将军</h2>
-      <p class="skills-intro reveal">Every experience has taught me something valuable. Here are the skills I have gathered throughout my journey as a CCS student.</p>
-      <ol class="timeline">
-        <li class="reveal">
-          <span class="num">01</span>
+      <p class="eyebrow reveal">Technical toolkit</p>
+      <h2 class="title reveal">Skills &amp; <span>Tools</span></h2>
+      <p class="section-intro reveal">A categorized overview of technologies and tools listed in my resume. Familiarity labels are intentionally conservative and should be updated as I gain more experience.</p>
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon">01</div><h3>Languages</h3>
+          <div class="skill-tags"><span>Python</span><span>JavaScript</span><span>SQL</span></div>
+          <p class="skill-level">Experience level: developing through coursework and projects</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">02</div><h3>Web Development</h3>
+          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span></div>
+          <p class="skill-level">Basic web development knowledge listed in resume</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">03</div><h3>Frameworks &amp; Databases</h3>
+          <div class="skill-tags"><span>Django</span><span>MySQL</span><span>PostgreSQL</span></div>
+          <p class="skill-level">Used / studied as part of technical experience</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">04</div><h3>Development Tools</h3>
+          <div class="skill-tags"><span>VS Code</span><span>Git</span><span>GitHub</span></div>
+          <p class="skill-level">Tools listed in resume</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">05</div><h3>Computer Vision &amp; Design</h3>
+          <div class="skill-tags"><span>OpenCV</span><span>Basic Face Tracking</span><span>Canva</span></div>
+          <p class="skill-level">Basic familiarity with computer vision and UI design</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">06</div><h3>Productivity</h3>
+          <div class="skill-tags"><span>Microsoft Word</span><span>Excel</span><span>PowerPoint</span></div>
+          <p class="skill-level">Productivity tools listed in resume</p>
+        </article>
+      </div>
+      <p class="tier-note"><strong>Familiarity note:</strong> The resume names these technologies but does not assign a level to each one. The descriptions above avoid unsupported percentage ratings or proficiency claims.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">Selected academic work</p>
+      <h2 class="title reveal">Projects I've <span>Built</span></h2>
+      <p class="section-intro reveal">A visual showcase of applications I've worked on during my studies. The screenshots below are the original project images I provided.</p>
+
+      <article class="project-card reveal">
+        <div class="project-heading">
           <div>
-            <h3>Programming languages used</h3>
-            <p>The languages I use to build and style things on the web and beyond.</p>
-            <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <span class="project-kicker">Academic project · 2nd year</span>
+            <h3>GadLend Borrowing Management System</h3>
+            <p>A school gadget borrowing interface intended to help organize equipment, track borrower information, and show whether an item is available.</p>
           </div>
-        </li>
-        <li class="reveal">
-          <span class="num">02</span>
-          <div>
-            <h3>Technical Experiences </h3>
-            <p>Developed Database using Mysql and postgresql and Developed a Gadget burrowing system using python and JavaScript .</p>
-          </div>
-        </li>
-        <li class="reveal">
-          <span class="num">03</span>
-          <div>
-            <h3>Tools i used</h3>
-           <div class="tags"><span class="tag">Github</span><span class="tag">Word</span><span class="tag">Powerpoint</span><span class="tag">Canva</span></div>
-          </div>
-          </div>
-        </li>
-      </ol>
+          <span class="project-index">PROJECT 01</span>
+        </div>
+        <div class="project-gallery">
+          <button class="project-shot" type="button" data-full="assets/gadlend-login.jpg" data-alt="GadLend Borrowing Management System login screen">
+            <img src="assets/gadlend-login.jpg" alt="GadLend Borrowing Management System login screen" loading="lazy">
+            <span>Login interface <b>View image ↗</b></span>
+          </button>
+          <button class="project-shot" type="button" data-full="assets/gadlend-dashboard.jpg" data-alt="GadLend gadget management dashboard">
+            <img src="assets/gadlend-dashboard.jpg" alt="GadLend gadget management dashboard" loading="lazy">
+            <span>Gadget dashboard <b>View image ↗</b></span>
+          </button>
+        </div>
+        <div class="project-details">
+          <div><h4>Purpose</h4><p>Provide a simple interface for viewing gadget records and managing borrowing activity.</p></div>
+          <div><h4>Visible interface features</h4><ul><li>Login screen</li><li>Gadget list and search field</li><li>Add gadget form</li><li>Borrower and availability columns</li><li>Borrow action, dark mode, and logout controls</li></ul></div>
+          <div><h4>My contribution</h4><p>Developed this academic project during my second year. Additional details about my individual tasks can be added when confirmed.</p></div>
+          <div><h4>Technology &amp; results</h4><p>The screenshots do not identify the full technology stack or measured test results. These details can be added once confirmed; no unsupported claims are included here.</p></div>
+        </div>
+        <div class="project-footer"><span class="project-tag">Borrowing workflow</span><span class="project-tag">Inventory interface</span><span class="project-tag">Academic project</span></div>
+      </article>
+
+      <div class="coming-card reveal">
+        <span class="coming-icon">＋</span>
+        <div><h3>More projects will be added</h3><p>This section is ready for other applications and systems you've built. Each one can be presented with its own screenshots and a short explanation.</p></div>
+      </div>
+      <p class="rubric-note">For the course requirement requesting two detailed case studies, add a second real project here when its name, screenshots, technologies, and your contribution are available.</p>
     </div>
   </section>
 
@@ -105,30 +169,9 @@
       <p class="eyebrow reveal">Milestones</p>
       <h2 class="title reveal">My <span>Achievements</span></h2>
       <div class="cards">
-        <article class="card reveal">
-          <span class="num">01</span>
-          <h3>Academic Achievements</h3>
-          <ul>
-            <li><strong>With Honors</strong> &mdash; 1st Quarter, 2nd Semester, S.Y. 2023&ndash;2024</li>
-            <li><strong>Academic Achiever</strong> &mdash; 3rd Quarter, S.Y. 2021&ndash;2022</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">02</span>
-          <h3>Personal Milestones</h3>
-          <ul>
-            <li>Graduated from Our Lady of Fatima Academy of Dao, Inc.</li>
-            <li>Now a 3rd year BSIT student</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">03</span>
-          <h3>Other Accomplishments</h3>
-          <ul>
-            <li>Built and published my personal portfolio</li>
-            <li>Started sharing my code on GitHub</li>
-          </ul>
-        </article>
+        <article class="card reveal"><span class="num">01</span><h3>With Honors</h3><p>Certificate of Recognition for the First Quarter of the 2nd Semester, S.Y. 2023–2024.</p><span class="card-meta">March 22, 2024</span></article>
+        <article class="card reveal"><span class="num">02</span><h3>Academic Achiever</h3><p>Certificate of Recognition for the Third Quarter, S.Y. 2021–2022.</p><span class="card-meta">March 14, 2022</span></article>
+        <article class="card reveal"><span class="num">03</span><h3>Academic Journey</h3><p>Graduated from Our Lady of Fatima Academy of Dao, Inc. and continued studying Bachelor of Science in Information Technology.</p><span class="card-meta">BSIT student</span></article>
       </div>
     </div>
   </section>
@@ -139,63 +182,66 @@
       <h2 class="title reveal">My <span>Certificates</span></h2>
       <div class="certs">
         <article class="cert reveal">
-          <button type="button" class="cert-thumb" data-full="./img/with-honors-2024.jpg" aria-label="View With Honors certificate full size">
-            <img src="./img/with-honors-2024.jpg" alt="Certificate of Recognition awarding Aivan E. Baltazar With Honors, S.Y. 2023 to 2024" loading="lazy" />
+          <button type="button" class="cert-thumb" data-full="assets/with-honors-2024.jpg" data-alt="With Honors certificate awarded to Aivan E. Baltazar">
+            <img src="assets/with-honors-2024.jpg" alt="With Honors certificate awarded to Aivan E. Baltazar, school year 2023 to 2024" loading="lazy">
           </button>
-          <div class="cert-body">
-            <h3>With Honors</h3>
-            <p>Certificate of Recognition for the First Quarter of the 2nd Semester, S.Y. 2023&ndash;2024.</p>
-            <p class="cert-meta">Our Lady of Fatima Academy of Dao, Inc. &middot; March 22, 2024</p>
-          </div>
+          <div class="cert-body"><h3>With Honors</h3><p>Certificate of Recognition for the First Quarter of the 2nd Semester, S.Y. 2023–2024.</p><p class="cert-meta">Our Lady of Fatima Academy of Dao, Inc. · March 22, 2024</p></div>
         </article>
         <article class="cert reveal">
-          <button type="button" class="cert-thumb" data-full="./img/academic-achiever-2022.jpg" aria-label="View Academic Achiever certificate full size">
-            <img src="./img/academic-achiever-2022.jpg" alt="Certificate of Recognition awarding Aivan E. Baltazar as Academic Achiever, S.Y. 2021 to 2022" loading="lazy" />
+          <button type="button" class="cert-thumb" data-full="assets/academic-achiever-2022.jpg" data-alt="Academic Achiever certificate awarded to Aivan E. Baltazar">
+            <img src="assets/academic-achiever-2022.jpg" alt="Academic Achiever certificate awarded to Aivan E. Baltazar, school year 2021 to 2022" loading="lazy">
           </button>
-          <div class="cert-body">
-            <h3>Academic Achiever</h3>
-            <p>Certificate of Recognition for the Third Quarter, School Year 2021&ndash;2022.</p>
-            <p class="cert-meta">Our Lady of Fatima Academy of Dao, Inc. &middot; March 14, 2022</p>
-          </div>
+          <div class="cert-body"><h3>Academic Achiever</h3><p>Certificate of Recognition for the Third Quarter, S.Y. 2021–2022.</p><p class="cert-meta">Our Lady of Fatima Academy of Dao, Inc. · March 14, 2022</p></div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="documents">
+    <div class="container">
+      <p class="eyebrow reveal">Professional documentation</p>
+      <h2 class="title reveal">Resume &amp; <span>Documents</span></h2>
+      <div class="document-panel reveal">
+        <div class="document-copy">
+          <span class="document-label">DOCUMENT 01 · RESUME</span>
+          <h3>My professional resume</h3>
+          <p>View or download my resume for an overview of my education, technical tools, experience, and qualifications.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="assets/Aivan-Baltazar-Resume.pdf" target="_blank" rel="noopener">View resume ↗</a>
+            <a class="btn btn-ghost" href="assets/Aivan-Baltazar-Resume.pdf" download>Download PDF ↓</a>
+          </div>
+        </div>
+        <div class="document-preview">
+          <div class="pdf-top"><span></span><span></span><span></span><b>PDF PREVIEW</b></div>
+          <iframe src="assets/Aivan-Baltazar-Resume.pdf#toolbar=0&navpanes=0" title="Embedded preview of Aivan Baltazar's resume"></iframe>
+        </div>
+      </div>
+      <p class="doc-note">The resume is included as the available professional writing artifact. A separate course technical document or developer guide can be added when available.</p>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="container">
-      <p class="eyebrow reveal">Let&apos;s connect</p>
-      <h2 class="title reveal">Contact Me <span>Here</span></h2>
-      <p class="reveal">Feel free to connect with me through my business platforms.</p>
-      <div class="btn-row reveal">
-        <a href="https://www.linkedin.com/in/aivan-baltazar-377396447/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
-          LinkedIn
-        </a> 
-<a href="https://github.com/ban09132005-arch" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.840 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/>
-  </svg>
-  GitHub
-</a>
-
+      <p class="eyebrow reveal">Let's connect</p>
+      <h2 class="title reveal">Contact <span>Me</span></h2>
+      <p class="section-intro reveal">Feel free to reach out for professional connections, opportunities, or questions about my work.</p>
+      <div class="contact-panel reveal">
+        <div><span class="contact-label">EMAIL</span><a class="email-link" href="mailto:baltazarvan9@gmail.com">baltazarvan9@gmail.com</a></div>
+        <div class="btn-row">
+          <a href="mailto:baltazarvan9@gmail.comsubject=Portfolio%20Inquiry" class="btn btn-primary">Send me an email ↗</a>
+          <a href="https://www.linkedin.com/in/aivan-baltazar-377396447/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
+          <a href="https://github.com/ban09132005-arch" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub ↗</a>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="container">
-    <span>&copy; 2026 Aivan E. Baltazar</span>
-    <span>BSIT - 3 A &middot; Dao, Capiz</span>
-  </div>
-</footer>
+<footer><div class="container"><span>© <span id="year">2026</span> Aivan E. Baltazar</span><span>BSIT · Dao, Capiz, Philippines</span><a href="#home">Back to top ↑</a></div></footer>
 
-<dialog id="lightbox" aria-label="Certificate preview">
-  <button class="close" type="button">Close</button>
-  <img src="" alt="" />
+<dialog id="lightbox" aria-label="Image preview">
+  <button class="close" type="button" aria-label="Close image preview">Close ✕</button>
+  <img src="" alt="">
 </dialog>
-
-<script src="script.js"></script>
 </body>
 </html>
